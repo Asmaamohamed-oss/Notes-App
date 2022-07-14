@@ -283,3 +283,25 @@ function udateNoteLocalST(UpdateObj){
     console.log(filterdNotes,"filterd");
     localStorage.setItem("notes",JSON.stringify(filterdNotes))
 }
+
+
+/*Scroll to top*/
+
+const toTop = document.querySelector(".toTop")
+window.addEventListener("scroll",(e)=>{
+    if(window.scrollY >= 350){
+        console.log("ok");
+        toTop.classList.add("show")
+    }else{
+        toTop.classList.remove("show")
+    }
+    // console.log(window.scrollY)
+})
+
+toTop.addEventListener("click",(e)=>{
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    })
+})

@@ -249,7 +249,7 @@ button.add-note span:nth-child(2){
 @media (min-width:438px) {
     .notes-container .note , 
     .notes-container .add-note{
-        width: calc((100% - 10px) / 2);
+        width: calc((100% - 12px) / 2);
     }
 }
 
